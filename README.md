@@ -1,4 +1,4 @@
-# 🍽️ Sistema de Gestión de Restaurante
+# 🍽️ Sistema de Gestión de Restaurante - Semana 5
 
 **Estudiante:** Joe Jairo Nieto Flores
 
@@ -8,14 +8,32 @@ Este proyecto es un sistema básico de gestión de restaurante desarrollado en P
 
 ## 🏗️ Estructura del proyecto
 
-### 📂 Descripción de carpetas
+restaurante_app/
+├── modelos/
+│ ├── init.py
+│ ├── producto.py
+│ └── cliente.py
+├── servicios/
+│ ├── init.py
+│ └── restaurante.py
+├── main.py
+└── README.md
 
-| Carpeta | Función |
-|---------|---------|
-| `modelos/` | Contiene las clases que representan las entidades del sistema (Producto, Cliente). |
-| `servicios/` | Contiene la lógica de negocio (clase Restaurante) que gestiona productos y clientes. |
-| `main.py` | Punto de entrada. Se crean objetos y se ejecutan métodos para demostrar el funcionamiento. |
+## 🧩 Tipos de datos utilizados
+
+| Clase | Atributo | Tipo de dato |
+|-------|----------|--------------|
+| Producto | nombre | `str` |
+| Producto | precio | `float` |
+| Producto | categoria | `str` |
+| Producto | stock | `int` |
+| Producto | disponible | `bool` |
+| Cliente | nombre | `str` |
+| Cliente | telefono | `str` |
+| Cliente | email | `str` |
+| Restaurante | productos | `list` |
+| Restaurante | clientes | `list` |
 
 ## 🤔 Reflexión personal
 
-Comprender la importancia de modularizar un proyecto ha sido clave para organizar mejor el código y facilitar su mantenimiento. Separar las clases en archivos según su responsabilidad (modelos, servicios y punto de entrada) permite que el proyecto sea más entendible, escalable y reutilizable. Esta separación también facilita el trabajo en equipo, ya que diferentes personas pueden trabajar en distintos módulos sin generar conflictos. Aplicar estos principios desde el inicio del desarrollo permite construir software más sólido y profesional.
+Usar identificadores descriptivos como `nombre`, `precio`, `stock` o `disponible` hace que el código sea más fácil de leer y entender. Los tipos de datos adecuados (`str` para texto, `float` para precios, `int` para cantidades, `bool` para estados y `list` para colecciones) ayudan a evitar errores y dejan claro qué tipo de información maneja cada variable. Las listas permiten almacenar múltiples objetos y recorrerlos fácilmente, lo que simplifica la gestión de productos y clientes en el restaurante.
