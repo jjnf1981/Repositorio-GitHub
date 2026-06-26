@@ -8,16 +8,18 @@ Este proyecto es un sistema básico de gestión de restaurante desarrollado en P
 
 ## 🏗️ Estructura del proyecto
 
+```
 restaurante_app/
 ├── modelos/
-│ ├── init.py
-│ ├── producto.py
-│ └── cliente.py
+│   ├── __init__.py
+│   ├── producto.py
+│   └── cliente.py
 ├── servicios/
-│ ├── init.py
-│ └── restaurante.py
+│   ├── __init__.py
+│   └── restaurante.py
 ├── main.py
 └── README.md
+```
 
 ## 🧩 Tipos de datos utilizados
 
